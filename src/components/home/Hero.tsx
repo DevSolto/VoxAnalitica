@@ -18,9 +18,6 @@ export default function Hero() {
           transition={{ duration: 0.7, ease: 'easeOut' }}
         >
           {/* Label */}
-          <span className="inline-block text-xs font-semibold tracking-widest uppercase text-brand-amber mb-6">
-            Pesquisa Política · PE · PB
-          </span>
 
           <h1 className="text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight mb-6">
             Pesquisa e inteligência política para entender o eleitor antes da concorrência

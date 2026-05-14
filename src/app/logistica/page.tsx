@@ -14,14 +14,14 @@ const equipes = [
     nome: 'Equipe Pernambuco',
     base: 'São José do Egito',
     cobertura: 'São José do Egito até Araripe e região do Sertão Pernambucano',
-    especialidades: ['Cobertura de municípios rurais e remotos', 'Mapeamento de lideranças locais', 'Pesquisa porta a porta no interior'],
+    especialidades: ['Pesquisa quantiativas.'],
     supervisao: 'Coordenação direta em campo + supervisão remota do escritório central',
   },
   {
     nome: 'Equipe Paraíba',
     base: 'Campina Grande',
     cobertura: 'Toda a Paraíba, incluindo região metropolitana de João Pessoa e Campina Grande',
-    especialidades: ['Cobertura do interior ao litoral', 'Pesquisa em regiões metropolitanas', 'Mapeamento eleitoral estadual'],
+    especialidades: ['Pesquisa quantiativas.'],
     supervisao: 'Coordenação integrada com protocolo unificado + auditoria contínua',
   },
   {
