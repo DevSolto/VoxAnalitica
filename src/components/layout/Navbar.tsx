@@ -8,7 +8,6 @@ const navLinks = [
   { label: 'Metodologia', href: '/metodologia' },
   { label: 'Logística', href: '/logistica' },
   { label: 'Sobre', href: '/sobre' },
-  { label: 'Artigos', href: '/blog' },
   { label: 'FAQ', href: '/faq' },
 ]
 
