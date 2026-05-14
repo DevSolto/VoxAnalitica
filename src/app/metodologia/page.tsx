@@ -20,7 +20,7 @@ const etapas = [
     numero: '02',
     nome: 'Desenho Metodológico',
     descricao:
-      'Com o objetivo claro, definimos o desenho da pesquisa: tipo de abordagem (quantitativa, qualitativa ou combinada), território de coleta, perfil do público-alvo, tamanho da amostra e roteiro de perguntas. Cada escolha metodológica tem uma razão — e você vai saber qual é antes de assinar qualquer coisa.',
+      'Com o objetivo claro, definimos o desenho da pesquisa: tipo de abordagem (quantitativa, qualitativa ou combinada), território de coleta, perfil do público-alvo, tamanho da amostra e roteiro de perguntas. Cada escolha metodológica tem uma razão.',
   },
   {
     numero: '03',

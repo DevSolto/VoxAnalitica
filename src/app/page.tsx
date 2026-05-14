@@ -1,5 +1,4 @@
 import Hero from '@/components/home/Hero'
-import Numbers from '@/components/home/Numbers'
 import ServicesPreview from '@/components/home/ServicesPreview'
 import AudiencePreview from '@/components/home/AudiencePreview'
 import HowItWorksPreview from '@/components/home/HowItWorksPreview'
@@ -11,7 +10,6 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Numbers />
       <ServicesPreview />
       <AudiencePreview />
       <HowItWorksPreview />

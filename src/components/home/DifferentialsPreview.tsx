@@ -17,7 +17,7 @@ const diferenciais = [
   },
   {
     numero: '03',
-    titulo: 'Estrutura Enxuta',
+    titulo: 'Operação enxuta',
     descricao:
       'Sem custos de estrutura corporativa. Preço competitivo e prazo menor, sem abrir mão de metodologia sólida.',
   },
@@ -25,7 +25,7 @@ const diferenciais = [
     numero: '04',
     titulo: 'Dados Auditáveis',
     descricao:
-      'Entregamos dados brutos junto com o relatório: gravações, fichas de campo, planilhas de tabulação.',
+      'Entregamos dados brutos Junto com o relatório a gente entrega planilha de tabulação mas não entrega a ficha de campo nem gravações.',
   },
   {
     numero: '05',

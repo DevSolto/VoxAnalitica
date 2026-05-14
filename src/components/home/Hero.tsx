@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import Link from 'next/link'
 
 const WA_URL =
@@ -8,28 +9,17 @@ const WA_URL =
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center bg-brand-blue-dark overflow-hidden">
-      {/* Decorative grid overlay */}
-      <div
-        aria-hidden
-        className="absolute inset-0 opacity-[0.04]"
-        style={{
-          backgroundImage:
-            'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)',
-          backgroundSize: '60px 60px',
-        }}
-      />
-
-      <div className="relative max-w-6xl mx-auto px-6 py-32 lg:py-40">
+    <section className="relative min-h-[90vh] flex overflow-hidden bg-[#2A3D8F]">
+      {/* Left column — text content */}
+      <div className="flex items-center w-full md:w-1/2 px-6 py-24 lg:py-32 md:pl-12 lg:pl-20">
         <motion.div
           initial={{ opacity: 0, y: 32 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="max-w-3xl"
         >
           {/* Label */}
           <span className="inline-block text-xs font-semibold tracking-widest uppercase text-brand-amber mb-6">
-            Pesquisa Política · PE · PB · RN
+            Pesquisa Política · PE · PB
           </span>
 
           <h1 className="text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight mb-6">
@@ -60,6 +50,25 @@ export default function Hero() {
           </div>
         </motion.div>
       </div>
+
+      {/* Right column — image rectangle */}
+      <div className="hidden md:flex md:items-center md:w-1/2 relative py-8 pr-8 pl-4">
+        <div className="relative w-full h-[65vh] rounded-2xl overflow-hidden">
+          <Image
+            src="/hero-olinda1.png"
+            alt="Pesquisadora nas ladeiras de Olinda — PE"
+            fill
+            priority
+            className="object-cover object-center"
+            sizes="50vw"
+          />
+        </div>
+      </div>
+
+      {/* Photo caption */}
+      <p className="absolute bottom-4 right-4 text-white/40 text-xs select-none">
+        Pesquisadora nas ladeiras de Olinda — PE
+      </p>
     </section>
   )
 }

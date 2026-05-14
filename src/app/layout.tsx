@@ -28,7 +28,7 @@ const jsonLd = {
     addressRegion: 'PE',
     addressCountry: 'BR',
   },
-  areaServed: ['Pernambuco', 'Paraíba', 'Rio Grande do Norte'],
+  areaServed: ['Pernambuco', 'Paraíba'],
   founder: { '@type': 'Person', name: 'Antônio Souto' },
 }
 
