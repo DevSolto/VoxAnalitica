@@ -9,7 +9,7 @@ const navLinks = [
   { label: 'Sobre', href: '/sobre' },
   { label: 'Metodologia', href: '/metodologia' },
   { label: 'Logística', href: '/logistica' },
-  { label: 'Artigos', href: '/blog' },
+  // { label: 'Artigos', href: '/blog' }, // blog desativado
   { label: 'FAQ', href: '/faq' },
 ]
 

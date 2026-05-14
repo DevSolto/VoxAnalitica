@@ -1,10 +1,13 @@
 import createImageUrlBuilder from '@sanity/image-url'
 
-const builder = createImageUrlBuilder({
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID ?? '',
-  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET ?? 'production',
-})
+const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID
+const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET ?? 'production'
 
-export function urlFor(source: Parameters<typeof builder.image>[0]) {
+const builder = projectId
+  ? createImageUrlBuilder({ projectId, dataset })
+  : null
+
+export function urlFor(source: Parameters<ReturnType<typeof createImageUrlBuilder>['image']>[0]) {
+  if (!builder) return { url: () => '' } as ReturnType<ReturnType<typeof createImageUrlBuilder>['image']>
   return builder.image(source)
 }
