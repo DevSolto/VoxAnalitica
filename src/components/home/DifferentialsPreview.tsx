@@ -13,19 +13,19 @@ const diferenciais = [
     numero: '02',
     titulo: 'Liderança em Campo',
     descricao:
-      'Supervisores acompanham a coleta em tempo real. Cada entrevistador monitorado por rota, horário e perfil.',
+      'A Vox Analítica é liderada por Antônio Souto, fundador da empresa e especialista em pesquisas qualitativas e quantitativas aplicadas à política municipal e regional. Sua experiência combina análise de dados, leitura territorial e vivência direta em campanhas, mandatos e gestões públicas no Nordeste.',
   },
   {
     numero: '03',
-    titulo: 'Operação enxuta',
+    titulo: 'Estrutura Enxuta',
     descricao:
       'Sem custos de estrutura corporativa. Preço competitivo e prazo menor, sem abrir mão de metodologia sólida.',
   },
   {
     numero: '04',
-    titulo: 'Dados Auditáveis',
+    titulo: 'Dados verificáveis e entrega transparente',
     descricao:
-      'Entregamos dados brutos Junto com o relatório a gente entrega planilha de tabulação mas não entrega a ficha de campo nem gravações.',
+      'A Vox trabalha com controle de coleta, registro de rotas, supervisão de campo e organização dos dados em planilhas estruturadas. Ao final do projeto, o cliente recebe o relatório analítico e a base tabulada, permitindo conferir os resultados e entender como as conclusões foram construídas. Materiais sensíveis, como gravações individuais e fichas completas de campo, são preservados para proteger a privacidade dos entrevistados e a integridade metodológica da pesquisa.',
   },
   {
     numero: '05',

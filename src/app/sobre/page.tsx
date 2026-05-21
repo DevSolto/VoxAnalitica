@@ -38,6 +38,7 @@ const metodologiaHibrida = {
 const presencaGeografica = [
   { estado: 'Pernambuco', cidades: ['Olinda', 'Recife', 'São José do Egito'] },
   { estado: 'Paraíba', cidades: ['Campina Grande', 'João Pessoa'] },
+  { estado: 'Rio Grande do Norte', cidades: ['Cobertura via equipe PB/RN'] },
 ]
 
 export default function SobrePage() {

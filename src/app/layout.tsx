@@ -2,9 +2,7 @@ import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import './globals.css'
 import { defaultMetadata } from '@/lib/metadata'
-import Navbar from '@/components/layout/Navbar'
-import Footer from '@/components/layout/Footer'
-import WhatsAppButton from '@/components/layout/WhatsAppButton'
+import SiteShell from '@/components/layout/SiteShell'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -14,12 +12,14 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = defaultMetadata
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://voxanalitica.com.br'
+
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
   name: 'Vox Analítica',
   description: 'Pesquisa política e inteligência estratégica no Nordeste',
-  url: 'https://voxanalitica.com.br',
+  url: SITE_URL,
   telephone: '+55-81-9241-1466',
   email: 'voxanalitica1@gmail.com',
   address: {
@@ -28,8 +28,12 @@ const jsonLd = {
     addressRegion: 'PE',
     addressCountry: 'BR',
   },
-  areaServed: ['Pernambuco', 'Paraíba'],
+  areaServed: ['Pernambuco', 'Paraíba', 'Rio Grande do Norte'],
   founder: { '@type': 'Person', name: 'Antônio Souto' },
+  sameAs: [
+    'https://www.instagram.com/voxanalitica.br/',
+    'https://www.facebook.com/profile.php?id=61579455456761',
+  ],
 }
 
 export default function RootLayout({
@@ -46,10 +50,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans">
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-        <WhatsAppButton />
+        <SiteShell>{children}</SiteShell>
       </body>
     </html>
   )

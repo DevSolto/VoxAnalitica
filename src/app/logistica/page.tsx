@@ -13,28 +13,28 @@ const equipes = [
   {
     nome: 'Equipe Pernambuco',
     base: 'São José do Egito',
-    cobertura: 'São José do Egito até Araripe e região do Sertão Pernambucano',
-    especialidades: ['Pesquisa quantiativas.'],
+    cobertura: 'Sertão pernambucano, agreste e região metropolitana — alcance até Araripe',
+    especialidades: ['Pesquisas quantitativas em campo'],
     supervisao: 'Coordenação direta em campo + supervisão remota do escritório central',
   },
   {
-    nome: 'Equipe Paraíba',
+    nome: 'Equipe Paraíba & Rio Grande do Norte',
     base: 'Campina Grande',
-    cobertura: 'Toda a Paraíba, incluindo região metropolitana de João Pessoa e Campina Grande',
-    especialidades: ['Pesquisa quantiativas.'],
+    cobertura: 'Toda a Paraíba (incluindo João Pessoa e Campina Grande) e municípios do Rio Grande do Norte',
+    especialidades: ['Pesquisas quantitativas em campo'],
     supervisao: 'Coordenação integrada com protocolo unificado + auditoria contínua',
   },
   {
     nome: 'Equipe de Pesquisa Qualitativa',
-    base: 'Escritório Central — Olinda, Pernambuco',
-    cobertura: 'Coordenação de pesquisas qualitativas em toda a região de atuação (PE, PB)',
+    base: 'Olinda, Pernambuco',
+    cobertura: 'Coordenação de pesquisas qualitativas em toda a região de atuação (PE, PB e RN)',
     especialidades: [
       'Entrevistas em profundidade',
       'Grupos focais estratégicos',
       'Análise de narrativas',
       'Insights comportamentais',
     ],
-    supervisao: 'Gestão centralizada de todas as pesquisas qualitativas, análise integrada e recomendações estratégicas',
+    supervisao: 'Gestão centralizada das pesquisas qualitativas, análise integrada e recomendações estratégicas',
   },
 ]
 
@@ -79,7 +79,7 @@ const coordenacao = [
     passo: 4,
     nome: 'Relatório Final',
     descricao:
-      'Relatório consolidado com dados auditados, análises estratégicas e recomendações acionáveis. Qualidade garantida em 100% dos projetos.',
+      'Relatório consolidado entregue junto com a base tabulada — análises estratégicas, recomendações acionáveis e dados verificáveis para conferência.',
   },
 ]
 

@@ -20,13 +20,14 @@ export default function Hero() {
           {/* Label */}
 
           <h1 className="text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight mb-6">
-            Pesquisa e inteligência política para entender o eleitor antes da concorrência
+            Pesquisa e inteligência política para decidir antes da concorrência
           </h1>
 
           <p className="text-lg lg:text-xl text-white/75 leading-relaxed mb-10 max-w-2xl">
-            Para marqueteiros, estratégistas de campanha, parlamentares e gestores públicos que
-            precisam transformar escuta popular, dados de campo e análise estratégica em decisões
-            mais seguras.
+            A Vox Analítica ajuda marqueteiros, parlamentares, gestores públicos e lideranças
+            regionais a entender o eleitor, medir cenários e transformar dados de campo em
+            estratégia. Atuamos com pesquisas quantitativas, qualitativas de rua e diagnósticos
+            políticos para campanhas, mandatos e gestões públicas no Nordeste.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">

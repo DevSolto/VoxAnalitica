@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Logo from '@/components/ui/Logo'
 
 const navLinks = [
   { label: 'Serviços', href: '/#servicos' },
@@ -36,15 +37,10 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center flex-shrink-0">
-            <span
-              className={`text-xl font-bold tracking-tight transition-colors ${
-                scrolled ? 'text-brand-blue' : 'text-white'
-              }`}
-            >
-              Vox Analítica
-            </span>
-          </Link>
+          <Logo
+            variant={scrolled ? 'color' : 'white'}
+            height={36}
+          />
 
           {/* Desktop nav */}
           <nav className="hidden lg:flex items-center gap-8">

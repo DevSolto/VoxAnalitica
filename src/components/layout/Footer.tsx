@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Logo from '@/components/ui/Logo'
 
 const WA_URL =
   process.env.NEXT_PUBLIC_WHATSAPP_ORCAMENTO ??
@@ -19,8 +20,8 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* 1. Brand */}
-          <div className="space-y-3">
-            <span className="text-xl font-bold tracking-tight">Vox Analítica</span>
+          <div className="space-y-4">
+            <Logo variant="white" height={36} href="/" />
             <p className="text-white/60 text-sm leading-relaxed">
               Inteligência estratégica para decisões que importam
             </p>

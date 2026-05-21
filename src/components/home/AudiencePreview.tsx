@@ -3,7 +3,7 @@ import SectionLabel from '@/components/ui/SectionLabel'
 
 const segments = [
   {
-    perfil: 'Marqueteiros e Estratégistas de Campanha',
+    perfil: 'Marqueteiros e Estrategistas de Campanha',
     descricao:
       'Que precisam de dado real antes de definir posicionamento, mensagem e alocação de mídia.',
   },

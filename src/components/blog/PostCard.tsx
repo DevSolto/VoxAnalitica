@@ -1,4 +1,6 @@
+import Image from 'next/image'
 import Link from 'next/link'
+import { urlFor } from '@/lib/sanity/image'
 
 interface Post {
   _id: string
@@ -8,7 +10,7 @@ interface Post {
   resumo?: string
   tempoLeitura?: string
   publicadoEm?: string
-  capa?: { asset?: { url: string } }
+  capa?: any
 }
 
 const categoryLabel: Record<string, string> = {
@@ -28,14 +30,19 @@ export function PostCard({ post }: { post: Post }) {
       })
     : null
 
+  const capaUrl = post.capa ? urlFor(post.capa)?.width(800).height(450).fit('crop').auto('format').url() : null
+
   return (
     <Link href={`/blog/${post.slug.current}`} className="group block">
       <article className="bg-white rounded-lg overflow-hidden h-full flex flex-col border border-base-border hover:border-brand-amber transition-colors">
-        {post.capa?.asset?.url && (
-          <div className="aspect-video overflow-hidden">
-            <img
-              src={post.capa.asset.url}
+        {capaUrl && (
+          <div className="aspect-video overflow-hidden relative">
+            <Image
+              src={capaUrl}
               alt={post.titulo}
+              width={800}
+              height={450}
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             />
           </div>

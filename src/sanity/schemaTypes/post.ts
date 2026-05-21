@@ -28,10 +28,11 @@ export default {
       type: 'string',
       options: {
         list: [
-          { title: 'Eleições', value: 'eleicoes' },
-          { title: 'Metodologia', value: 'metodologia' },
-          { title: 'Análise política', value: 'analise-politica' },
-          { title: 'Nordeste', value: 'nordeste' },
+          { title: 'Diagnóstico', value: 'diagnostico' },
+          { title: 'Mandato', value: 'mandato' },
+          { title: 'Desenvolvimento', value: 'desenvolvimento' },
+          { title: 'Gestão Pública', value: 'gestao-publica' },
+          { title: 'Conectividade', value: 'conectividade' },
         ],
       },
     },
@@ -40,7 +41,19 @@ export default {
       title: 'Resumo (aparece nos cards e no SEO)',
       type: 'text',
       rows: 3,
-      validation: (R: any) => R.max(160),
+      validation: (R: any) => R.max(200),
+    },
+    {
+      name: 'tempoLeitura',
+      title: 'Tempo de leitura (ex: "7 min")',
+      type: 'string',
+    },
+    {
+      name: 'tags',
+      title: 'Tags',
+      type: 'array',
+      of: [{ type: 'string' }],
+      options: { layout: 'tags' },
     },
     {
       name: 'conteudo',

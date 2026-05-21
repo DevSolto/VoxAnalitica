@@ -1,4 +1,6 @@
-import { MetadataRoute } from 'next'
+import type { MetadataRoute } from 'next'
+
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://voxanalitica.com.br'
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -7,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/studio/',
     },
-    sitemap: 'https://voxanalitica.com.br/sitemap.xml',
+    sitemap: `${BASE_URL}/sitemap.xml`,
   }
 }
