@@ -16,13 +16,15 @@ export default function Logo({
 }: LogoProps) {
   const src = variant === 'white' ? '/logo-vox-branco.png' : '/logo-vox-escuro.png'
 
+  // Proporção natural do logo: 2772x1016
+  const width = Math.round(height * (2772 / 1016))
+
   const content = (
     <Image
       src={src}
       alt="Vox Analítica"
-      width={0}
-      height={0}
-      sizes="100vw"
+      width={width}
+      height={height}
       style={{ height, width: 'auto' }}
       className={className}
       priority

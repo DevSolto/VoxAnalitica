@@ -20,6 +20,8 @@ const jsonLd = {
   name: 'Vox Analítica',
   description: 'Pesquisa política e inteligência estratégica no Nordeste',
   url: SITE_URL,
+  logo: `${SITE_URL}/logo-vox-escuro.png`,
+  image: `${SITE_URL}/og-image.jpg`,
   telephone: '+55-81-9241-1466',
   email: 'voxanalitica1@gmail.com',
   address: {

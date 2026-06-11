@@ -122,15 +122,15 @@ export default async function BlogPostPage({ params }: PageProps) {
 
       {/* Capa */}
       {(() => {
-        const capaUrl = post.capa
-          ? urlFor(post.capa)?.width(1280).height(720).fit('crop').auto('format').url()
+        const capaUrl: string | null = post.capa
+          ? urlFor(post.capa)?.width(1280).height(720).fit('crop').auto('format').url() ?? null
           : null
         if (!capaUrl) return null
         return (
           <div className="bg-brand-blue-dark">
             <div className="max-w-4xl mx-auto px-6 pb-12">
               <Image
-                src={capaUrl}
+                src={capaUrl!}
                 alt={post.titulo}
                 width={1280}
                 height={720}

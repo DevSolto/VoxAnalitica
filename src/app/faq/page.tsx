@@ -3,6 +3,7 @@ import AnimatedSection from '@/components/ui/AnimatedSection'
 import SectionLabel from '@/components/ui/SectionLabel'
 import CtaButton from '@/components/ui/CtaButton'
 import FaqClient from '@/components/faq/FaqClient'
+import { abas } from '@/components/faq/faqData'
 
 export const metadata: Metadata = {
   title: 'FAQ',
@@ -10,16 +11,32 @@ export const metadata: Metadata = {
     'Perguntas frequentes sobre os serviços da Vox Analítica — respostas para marqueteiros, parlamentares e gestores públicos.',
 }
 
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: abas.flatMap((aba) =>
+    aba.perguntas.map((p) => ({
+      '@type': 'Question',
+      name: p.pergunta,
+      acceptedAnswer: { '@type': 'Answer', text: p.resposta },
+    }))
+  ),
+}
+
 export default function FaqPage() {
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       {/* Header */}
       <section className="bg-brand-blue-dark pt-32 pb-20 lg:pt-40 lg:pb-28">
         <div className="max-w-6xl mx-auto px-6">
           <AnimatedSection>
             <SectionLabel className="text-brand-amber">DÚVIDAS FREQUENTES</SectionLabel>
             <h1 className="text-5xl lg:text-6xl font-bold tracking-tight text-white mt-4 mb-6 max-w-2xl">
-              Dúvidas Frequentes
+              Perguntas Frequentes sobre Pesquisa Política
             </h1>
             <p className="text-lg text-white/80 max-w-xl leading-relaxed">
               Respostas rápidas e específicas para marqueteiros, parlamentares e gestores públicos.

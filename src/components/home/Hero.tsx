@@ -53,10 +53,12 @@ export default function Hero() {
       <div className="hidden md:flex md:items-center md:w-1/2 relative py-8 pr-8 pl-4">
         <div className="relative w-full h-[65vh] rounded-2xl overflow-hidden">
           <Image
-            src="/hero-olinda1.png"
+            src="/hero-olinda1.jpg"
             alt="Pesquisadora nas ladeiras de Olinda — PE"
             fill
             priority
+            fetchPriority="high"
+            quality={65}
             className="object-cover object-center"
             sizes="50vw"
           />
@@ -64,7 +66,7 @@ export default function Hero() {
       </div>
 
       {/* Photo caption */}
-      <p className="absolute bottom-4 right-4 text-white/40 text-xs select-none">
+      <p className="absolute bottom-4 right-4 text-white/70 text-xs select-none">
         Pesquisadora nas ladeiras de Olinda — PE
       </p>
     </section>

@@ -4,6 +4,9 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://voxanalitica.com.b
 
 export const defaultMetadata: Metadata = {
   metadataBase: new URL(BASE_URL),
+  alternates: {
+    canonical: './',
+  },
   title: {
     default: 'Vox Analítica | Inteligência Estratégica e Pesquisa Política',
     template: '%s | Vox Analítica',

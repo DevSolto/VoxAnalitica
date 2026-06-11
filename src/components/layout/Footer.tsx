@@ -29,7 +29,7 @@ export default function Footer() {
 
           {/* 2. Navegação */}
           <div>
-            <h3 className="text-xs font-semibold uppercase tracking-widest text-white/40 mb-4">
+            <h3 className="text-xs font-semibold uppercase tracking-widest text-white/60 mb-4">
               Navegação
             </h3>
             <ul className="space-y-3">
@@ -48,7 +48,7 @@ export default function Footer() {
 
           {/* 3. Contato */}
           <div>
-            <h3 className="text-xs font-semibold uppercase tracking-widest text-white/40 mb-4">
+            <h3 className="text-xs font-semibold uppercase tracking-widest text-white/60 mb-4">
               Contato
             </h3>
             <ul className="space-y-3">
@@ -81,7 +81,7 @@ export default function Footer() {
 
           {/* 4. Redes Sociais */}
           <div>
-            <h3 className="text-xs font-semibold uppercase tracking-widest text-white/40 mb-4">
+            <h3 className="text-xs font-semibold uppercase tracking-widest text-white/60 mb-4">
               Redes Sociais
             </h3>
             <ul className="space-y-3">
@@ -116,7 +116,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-white/10 mt-12 pt-8 flex flex-col sm:flex-row justify-between gap-4 text-xs text-white/40">
+        <div className="border-t border-white/10 mt-12 pt-8 flex flex-col sm:flex-row justify-between gap-4 text-xs text-white/60">
           <span>© 2026 Vox Analítica. CNPJ: 52.726.286/0001-90. Todos os direitos reservados.</span>
           <span>Olinda, Pernambuco</span>
         </div>

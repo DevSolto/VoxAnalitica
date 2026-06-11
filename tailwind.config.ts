@@ -13,8 +13,8 @@ const config: Config = {
           blue:         '#374EB5',
           'blue-dark':  '#2A3D8F',
           'blue-light': '#EEF1FA',
-          amber:        '#C87A3A',
-          'amber-light':'#D9934F',
+          amber:        '#A95F23',
+          'amber-light':'#C87A3A',
         },
         base: {
           white:    '#FFFFFF',

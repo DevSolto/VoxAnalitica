@@ -20,7 +20,7 @@ export default async function BlogPage() {
   let posts: any[] = []
   try {
     if (client) {
-      posts = await client.fetch(ALL_POSTS_QUERY)
+      posts = await client!.fetch(ALL_POSTS_QUERY)
     }
   } catch {
     // Sanity ainda não configurado
